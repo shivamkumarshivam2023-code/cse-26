@@ -6,72 +6,65 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 align="center">Student Registration Form</h1> 
-    <hr> 
+    <h1 align="center">Hotel Room Booking Form</h1> 
+<form action="#" method="post" align="center"> 
+<!-- Name --> 
+<label for="fullname">Full Name:</label> 
+<input type="text" id="fullname" name="fullname" required> 
+<br><br> 
+<!-- Email --> 
+<label for="email">Email:</label> 
+<input type="email" id="email" name="email" required> 
+        <br><br> 
  
-    <!-- Registration Form --> 
-    <form method="post" action="submit.html"> 
+        <!-- Phone --> 
+        <label for="phone">Phone:</label> 
+        <input type="tel" id="phone" name="phone" required> 
+        <br><br> 
  
-        <!-- Full Name --> 
-        <p> 
-            <label>Full Name: </label> 
-            <input type="text" name="fullname" placeholder="Enter your full name" required> 
-        </p> 
+        <!-- Check-in & Check-out --> 
+        <label for="checkin">Check-in Date:</label> 
+        <input type="date" id="checkin" name="checkin"> 
+        <br><br> 
  
-        <!-- Email with validation --> 
-        <p> 
-            <label>Email: </label> 
-            <input type="email" name="email" placeholder="Enter valid email address" required> 
-        </p> 
+        <label for="checkout">Check-out Date:</label> 
+        <input type="date" id="checkout" name="checkout"> 
+        <br><br> 
  
-        <!-- Password --> 
-        <p> 
-            <label>Password: </label> 
-            <input type="password" name="password" placeholder="Enter password" required> 
-        </p> 
+        <!-- Room Type --> 
+        <label for="room">Room Type:</label> 
+        <select id="room" name="room"> 
+            <option value="single">Single Room</option> 
+            <option value="double">Double Room</option> 
+            <option value="deluxe">Deluxe Room</option> 
+            <option value="suite">Suite</option> 
+        </select> 
+        <br><br> 
  
-        <!-- Gender (Radio Buttons) --> 
-        <p> 
-            <label>Gender: </label> 
-            <input type="radio" name="gender" value="male" required> Male 
-            <input type="radio" name="gender" value="female"> Female 
-         
-        </p> 
+        <!-- Number of Guests --> 
+        <label for="guests">Number of Guests:</label> 
+        <input type="number" id="guests" name="guests" min="1" max="10"> 
+        <br><br> 
  
-        <!-- Course Selection (Dropdown) --> 
-        <p> 
-            <label>Course: </label> 
-            <select name="course" required> 
-                <option value="">-- Select Course --</option> 
-                <option value="btech">B.Tech</option> 
-                <option value="bca">BCA</option> 
-                <option value="mba">MBA</option> 
-                <option value="mca">MCA</option> 
-            </select> 
-        </p> 
+        <!-- Special Requests --> 
+        <label for="requests">Special Requests:</label><br> 
+        <textarea id="requests" name="requests" rows="4" cols="40"></textarea> 
+        <br><br> 
  
-        <!-- Contact Number --> 
-        <p> 
-            <label>Contact No: </label> 
-            <input type="tel" name="contact" placeholder="Enter phone number" required> 
-        </p> 
- 
-        <!-- Address (Textarea) --> 
-        <p> 
-            <label>Address: </label><br> 
-            <textarea name="address" rows="4" cols="40" placeholder="Enter your address" required></textarea> 
-        </p> 
- 
-        <!-- Submit and Reset --> 
-        <p> 
-            <input type="submit" value="Register"> 
-            <input type="reset" value="Clear"> 
-        </p> 
+        <!-- Buttons --> 
+        <input type="submit" value="Book Now"> 
+        <input type="reset" value="Reset Form">
+        
     </form> 
- 
-    <hr> 
-    <p align="center">&copy; 2025 Student Registration Portal</p>
-     <h1 align="center">Name=shivam gupta</h1> 
-      <h2 align="center">Roll no.=2025B01010717</h>
+
+    <p align="center">Name=shivam gupta</p>
+    <p align="center">roll no.=2025b01010717</p>
+
+
+
+
+
+            
+
 </body>
 </html>
